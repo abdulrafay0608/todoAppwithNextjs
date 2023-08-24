@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.content_container {
+  background-color: lightsteelblue;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.todo-heading {
+  background-color: slategrey;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.todo_input {
+  background-color: transparent;
+  border: 2px solid slategrey;
+  /* border-radius: 10px; */
+  width: 80%;
+  padding: 8px;
+  padding-left: 25px;
+  color: #000;
+}
+
+.todo_input:focus{
+  outline: none   ;
+}
+.todo_input::placeholder {
+  color: #000 ;
+  font-size: 15px;
+}
+
+.submit_todo {
+  width: 20%;
+  color: #000;
+  padding: 8px;
+  background-color: lightslategrey;
+  border: 2px solid slategrey;
+  /* border-radius: 10px; */
+
+}
+/* .submit_todo:hover{
+  border-radius: 10px;
+} */
+
+.inputAndAddBtnContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5px;
+  /* padding-left: 15px; */
+
+}
+
+.list_container {
+  list-style-type: none;
+}
+
+.todosss{
+  background-color: lightslategrey;
+}
+.list-item{
+  margin: 0px 10px 20px 10px; 
+}
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
